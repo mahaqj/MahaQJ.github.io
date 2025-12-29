@@ -3,12 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main Page</title>
+  <title>Pixel Main Page</title>
+
+  <!-- Pixel-style Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(#7ec8e3, #dff6ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    .game-screen {
+      width: 360px;
+      height: 640px;
+      background: #f4f4d8;
+      border: 8px solid #2b2b2b;
+      box-shadow: 0 0 0 6px #6b6b6b;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 14px;
+      text-align: center;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    button {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 10px;
+      padding: 14px;
+      background: #fff;
+      border: 4px solid #2b2b2b;
+      cursor: pointer;
+      box-shadow: inset -4px -4px 0 #bcbcbc;
+      transition: all 0.1s ease;
+    }
+
+    button:hover {
+      background: #ffe066;
+    }
+
+    button:active {
+      box-shadow: inset 4px 4px 0 #bcbcbc;
+      transform: translate(2px, 2px);
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 8px;
+      color: #555;
+    }
+
+    /* pixelated effect */
+    html {
+      image-rendering: pixelated;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <button onclick="location.href='page1.html'">Go to Page 1</button>
-  <button onclick="location.href='page2.html'">Go to Page 2</button>
-  <button onclick="location.href='page3.html'">Go to Page 3</button>
+
+  <div class="game-screen">
+    <h1>
+      welcome, trainer!<br>
+      choose your destination
+    </h1>
+
+    <div class="menu">
+      <button onclick="location.href='page1.html'">▶ page 1</button>
+      <button onclick="location.href='page2.html'">▶ page 2</button>
+      <button onclick="location.href='page3.html'">▶ page 3</button>
+    </div>
+
+    <div class="footer">
+      press start ✦
+    </div>
+  </div>
+
 </body>
 </html>
