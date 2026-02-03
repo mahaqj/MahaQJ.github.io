@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVEL 3: Data Visualization - Maha Zone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #1a1a1a;
+      --accent: #ff1493;
+      --bg: #0a0a0a;
+      --border: #ffffff;
+      --text: #ffffff;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1.6;
+    }
+
+    nav {
+      padding: 1.5rem 2rem;
+      background: var(--primary);
+      border-bottom: 3px solid var(--border);
+      border-top: 3px solid var(--border);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--border);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background: var(--accent);
+      color: var(--bg);
+      box-shadow: 5px 5px 0 var(--accent);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+      text-shadow: 3px 3px 0 var(--accent);
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    .project-meta {
+      color: var(--accent);
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    .content {
+      background: var(--primary);
+      border: 3px solid var(--border);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      transition: all 0.2s ease;
+    }
+
+    .content:hover {
+      border-color: var(--accent);
+      box-shadow: 5px 5px 0 var(--accent);
+    }
+
+    .content h2 {
+      color: var(--accent);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 0 var(--accent);
+    }
+
+    .content p {
+      color: var(--text);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+
+    .tech-tag {
+      background: var(--primary);
+      color: var(--accent);
+      padding: 0.4rem 0.9rem;
+      border: 2px solid var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+      cursor: default;
+    }
+
+    .tech-tag:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: var(--primary);
+      color: var(--text);
+      text-decoration: none;
+      border: 3px solid var(--accent);
+      margin-top: 1.5rem;
+      transition: all 0.2s ease;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: var(--bg);
+      box-shadow: 5px 5px 0 var(--accent);
+    }
+
+    ul {
+      color: var(--text);
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text);
+      border-top: 3px solid var(--border);
+      margin-top: 4rem;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 0 var(--accent);
+      }
+
+      .container {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">← Back to Home</a>
+  </nav>
+
+  <div class="container">
+    <h1>★ LEVEL 3 ★</h1>
+    <h1 style="margin-bottom: 1.5rem;">Data Visualization</h1>
+    <div class="project-meta">Data Science & Frontend | 2025</div>
+
+    <div class="content">
+      <h2>~ Overview ~</h2>
+      <p>An interactive data visualization and analytics platform that transforms raw data into actionable insights. Combines sophisticated data processing with beautiful, intuitive visualizations that tell stories.</p>
+
+      <h2>~ Key Features ~</h2>
+      <ul>
+        <li>Interactive charts and real-time data updates</li>
+        <li>Responsive design for all screen sizes</li>
+        <li>Advanced filtering and drill-down capabilities</li>
+        <li>Performance-optimized for large datasets</li>
+      </ul>
+
+      <h2>~ Technologies ~</h2>
+      <div class="tech-stack">
+        <span class="tech-tag">D3.js</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Data Processing</span>
+        <span class="tech-tag">Analytics</span>
+      </div>
+
+      <h2>~ What I Learned ~</h2>
+      <p>Visualizing complex data requires balancing aesthetics with functionality. This project taught me how to make data accessible and engaging while maintaining performance, even with millions of data points.</p>
+
+      <a href="#" class="btn">Explore Dashboard →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>[ MAHA ZONE | KEEP LEVELING UP ]</p>
+  </footer>
+</body>
+</html>
